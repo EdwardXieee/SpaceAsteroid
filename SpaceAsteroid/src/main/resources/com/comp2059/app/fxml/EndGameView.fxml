@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.comp2059.app.controller.EndGameStageController">
+
+    <ImageView fitHeight="720.0" fitWidth="1200.0">
+        <Image url="@../img/background/background.png" />
+    </ImageView>
+
+   <ListView fx:id="endRankingListView" layoutX="151.0" layoutY="178.0" prefHeight="394.0" prefWidth="920.0" stylesheets="@../css/style.css" />
+
+   <ImageView layoutX="10.0" layoutY="170.0">
+      <Image url="@../img/asteroid/asteroid_01.png" />
+   </ImageView>
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="905.0" layoutY="101.0">
+      <Image url="@../img/asteroid/asteroid_06.png" />
+   </ImageView>
+   <ImageView fitHeight="162.0" fitWidth="214.0" layoutX="872.0" layoutY="514.0" pickOnBounds="true">
+      <Image url="@../img/asteroid/asteroid_09.png" />
+   </ImageView>
+   <ImageView fitHeight="138.0" fitWidth="747.0" layoutX="398.0" layoutY="-18.0">
+      <Image url="@../img/text/gameOver.png" />
+   </ImageView>
+   <ImageView fitHeight="123.0" fitWidth="500.0" layoutX="350.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../img/others/downWindow.png" />
+   </ImageView>
+   <ImageView fx:id="congratulationImage" fitHeight="720.0" fitWidth="750.0" layoutX="250.0" layoutY="-100.0"
+              pickOnBounds="true" preserveRatio="true" />
+
+   <Button fx:id="btnEndStart" layoutX="426.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickReStart"
+           onMouseEntered="#enterReStart" onMouseExited="#exitReStart" prefHeight="15.0" prefWidth="33.0" scaleX="5.0" scaleY="4.0"
+           stylesheets="@../css/style.css" text="Restart" textFill="WHITE" />
+   <Button fx:id="btnEndBack" layoutX="754.0" layoutY="635.0" mnemonicParsing="false" onAction="#clickBack"
+           onMouseEntered="#enterBack" onMouseExited="#exitBack" prefHeight="15.0" prefWidth="33.0" scaleX="5.0" scaleY="4.0"
+           stylesheets="@../css/style.css" text="Back" textFill="WHITE" />
+</AnchorPane>

@@ -1,0 +1,9 @@
+module:com.vexed.vexed
+com.comp2059.app
+com.comp2059.app.controller
+com.comp2059.app.model
+com.comp2059.app.model.bullet
+com.comp2059.app.model.fireStrategy
+com.comp2059.app.model.shuttle
+com.comp2059.app.utils
+com.comp2059.app.view
